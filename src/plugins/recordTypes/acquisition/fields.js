@@ -2,29 +2,17 @@ import { defineMessages } from 'react-intl';
 
 export default (configContext) => {
   const {
-        AutocompleteInput,
-        CompoundInput,
-        TextInput,
-        DateInput,
-        OptionPickerInput,
-        StructuredDateInput,
-        TermPickerInput,
-        CheckboxInput,
-    } = configContext.inputComponents;
+    TextInput,
+    CheckboxInput,
+  } = configContext.inputComponents;
 
   const {
-        configKey: config,
-    } = configContext.configHelpers;
+    configKey: config,
+  } = configContext.configHelpers;
 
   const {
-        DATA_TYPE_DATE,
-        DATA_TYPE_BOOL,
-        DATA_TYPE_STRUCTURED_DATE,
-    } = configContext.dataTypes;
-
-  const {
-        extensions,
-    } = configContext.config;
+    DATA_TYPE_BOOL,
+  } = configContext.dataTypes;
 
   return {
     document: {

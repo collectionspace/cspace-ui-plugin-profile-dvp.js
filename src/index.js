@@ -1,6 +1,6 @@
 /* global cspaceUIPluginProfileDartmouthVietnamProject */
-/* The cspaceUIPluginProfileDartmouthVietnamProject global variable is set by webpack (in non-test builds). See
- * webpack.config.js. */
+/* The cspaceUIPluginProfileDartmouthVietnamProject global variable is set by webpack */
+/* (in non-test builds). See * webpack.config.js. */
 
 import { defineMessages } from 'react-intl';
 import messages from './messages';
