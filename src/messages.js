@@ -42,5 +42,6 @@ export default {
   'field.acquisitions_common.acquisitionSource.name': 'Creator - interviewer',
   'field.acquisitions_common.owner.name': 'Creator - interviewee',
   'field.acquisitions_common.acquisitionAuthorizer.name': 'Processor',
-
+  // For Panels
+  'panel.person.connections': 'Community Connections',
 };
