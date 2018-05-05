@@ -39,9 +39,18 @@ export default {
         </ul>
     `,
 
+  // For Acquisition Fields
   'field.acquisitions_common.acquisitionSource.name': 'Creator - interviewer',
   'field.acquisitions_common.owner.name': 'Creator - interviewee',
   'field.acquisitions_common.acquisitionAuthorizer.name': 'Processor',
+
+  // For Intake Fields
+  'field.intakes_common.currentOwner.name': 'Volunteer name',
+  'field.intakes_common.depositor.name': 'Interview assignee',
+  'field.intakes_common.entryDate.name': 'Form submission date',
+  'field.intakes_common.entryMethod.name': 'Form submission method',
+  'field.intakes_common.entryNote.name': 'Vietnam experience',
+
   // For Panels
   'panel.person.connections': 'Community Connections',
 };
