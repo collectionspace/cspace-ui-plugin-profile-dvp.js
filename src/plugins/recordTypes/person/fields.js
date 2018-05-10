@@ -3,9 +3,8 @@ import { defineMessages } from 'react-intl';
 export default (configContext) => {
   const {
     TextInput,
-    AutocompleteInput,
+    TermPickerInput,
     DateInput,
-    OptionPickerInput,
     StructuredDateInput,
     CompoundInput,
   } = configContext.inputComponents;
@@ -30,7 +29,7 @@ export default (configContext) => {
             ns: 'http://collectionspace.org/services/person/local/dvp',
           },
         },
-        dartmouthConnections: {
+        dartmouthConnectionList: {
           [config]: {
             view: {
               type: CompoundInput,
@@ -46,9 +45,9 @@ export default (configContext) => {
               }),
               repeating: true,
               view: {
-                type: AutocompleteInput,
+                type: TermPickerInput,
                 props: {
-                  source: 'person/local',
+                  source: 'dartmouthconnections',
                 },
               },
             },
@@ -67,57 +66,81 @@ export default (configContext) => {
             },
           },
         },
-        collegeBranch: {
+        collegeGroupList: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.persons_dvp.collegeBranch.name',
-                defaultMessage: 'College branch',
-              },
-            }),
             view: {
-              type: OptionPickerInput,
-              props: {
-                source: 'collegeBranches',
-              },
+              type: CompoundInput,
             },
           },
-        },
-        yearsOfAttendanceDate: {
-          [config]: {
-            dataType: DATA_TYPE_STRUCTURED_DATE,
-            messages: defineMessages({
-              name: {
-                id: 'field.persons_dvp.yearsOfAttendanceDate.name',
-                defaultMessage: 'Years of attendance',
+          collegeGroup: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.persons_dvp.collegeGroup.name',
+                  defaultMessage: 'College Info',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: CompoundInput,
+                props: {
+                  tabular: true,
+                },
               },
-            }),
-            searchView: {
-              type: DateInput,
             },
-            view: {
-              type: StructuredDateInput,
+            collegeBranch: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.persons_dvp.collegeBranch.name',
+                    defaultMessage: 'College branch',
+                  },
+                }),
+                view: {
+                  type: TermPickerInput,
+                  props: {
+                    source: 'collegebranches',
+                  },
+                },
+              },
+            },
+            yearsOfAttendanceDate: {
+              [config]: {
+                dataType: DATA_TYPE_STRUCTURED_DATE,
+                messages: defineMessages({
+                  name: {
+                    id: 'field.persons_dvp.yearsOfAttendanceDate.name',
+                    defaultMessage: 'Years of attendance',
+                  },
+                }),
+                searchView: {
+                  type: DateInput,
+                },
+                view: {
+                  type: StructuredDateInput,
+                },
+              },
+              ...extensions.structuredDate.fields,
+            },
+            yearOfGraduationDate: {
+              [config]: {
+                dataType: DATA_TYPE_STRUCTURED_DATE,
+                messages: defineMessages({
+                  name: {
+                    id: 'field.persons_dvp.yearOfGraduationDate.name',
+                    defaultMessage: 'Year of graduation',
+                  },
+                }),
+                searchView: {
+                  type: DateInput,
+                },
+                view: {
+                  type: StructuredDateInput,
+                },
+              },
+              ...extensions.structuredDate.fields,
             },
           },
-          ...extensions.structuredDate.fields,
-        },
-        yearOfGraduationDate: {
-          [config]: {
-            dataType: DATA_TYPE_STRUCTURED_DATE,
-            messages: defineMessages({
-              name: {
-                id: 'field.persons_dvp.yearOfGraduationDate.name',
-                defaultMessage: 'Year of graduation',
-              },
-            }),
-            searchView: {
-              type: DateInput,
-            },
-            view: {
-              type: StructuredDateInput,
-            },
-          },
-          ...extensions.structuredDate.fields,
         },
       },
     },

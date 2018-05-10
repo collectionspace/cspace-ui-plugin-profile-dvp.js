@@ -71,17 +71,20 @@ const template = (configContext) => {
       </Panel>
 
       <Panel name="connections">
-        <Col>
-          <Field name="dartmouthConnections" subpath="ns2:persons_dvp">
+        <Row>
+          <Field name="dartmouthConnectionList" subpath="ns2:persons_dvp">
             <Field name="dartmouthConnection" />
           </Field>
           <Field name="dartmouthConnectionOther" subpath="ns2:persons_dvp" />
-          <Field name="collegeBranch" subpath="ns2:persons_dvp" />
-        </Col>
-        <Row>
-          <Field name="yearsOfAttendanceDate" subpath="ns2:persons_dvp" />
-          <Field name="yearOfGraduationDate" subpath="ns2:persons_dvp" />
         </Row>
+
+        <Field name="collegeGroupList" subpath="ns2:persons_dvp">
+          <Field name="collegeGroup">
+            <Field name="collegeBranch" />
+            <Field name="yearsOfAttendanceDate" />
+            <Field name="yearOfGraduationDate" />
+          </Field>
+        </Field>
       </Panel>
 
       <Subrecord name="contact" />
