@@ -8,7 +8,7 @@ export default {
         <p>
             This prototype site is running the
             <a href="http://www.collectionspace.org/current_release/">current version</a> the
-            <a href="https://wiki.collectionspace.org/x/xgDZCQ">Dartmouth Vietname Project</a> of
+            <a href="https://wiki.collectionspace.org/x/xgDZCQ">Dartmouth Vietnam Project</a> of
             CollectionSpace.
         </p>
         <p>
@@ -40,8 +40,9 @@ export default {
     `,
 
   // For Acquisition Fields
-  'field.acquisitions_common.acquisitionSource.name': 'Creator - interviewer',
-  'field.acquisitions_common.owner.name': 'Creator - interviewee',
+  'field.acquisitions_common.acquisitionDateGroup.name': 'Interview date',
+  'field.acquisitions_common.acquisitionSource.name': 'Creator - Interviewer',
+  'field.acquisitions_common.owner.name': 'Creator - Interviewee',
   'field.acquisitions_common.acquisitionAuthorizer.name': 'Processor',
 
   // For Intake Fields

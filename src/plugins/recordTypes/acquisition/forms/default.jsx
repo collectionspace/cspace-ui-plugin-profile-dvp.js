@@ -24,10 +24,6 @@ const template = (configContext) => {
           <Col>
             <Field name="acquisitionReferenceNumber" />
             <Field name="accessionDateGroup" />
-            <Field name="acquisitionMethod" />
-            <Field name="acquisitionSources">
-              <Field name="acquisitionSource" />
-            </Field>
 
           </Col>
           <Col>
@@ -35,18 +31,35 @@ const template = (configContext) => {
             <Field name="acquisitionDateGroupList">
               <Field name="acquisitionDateGroup" />
             </Field>
+          </Col>
 
+        </Cols>
+
+        <Row>
+          <Col>
+            <Field name="acquisitionMethod" />
+          </Col>
+          <Col>
             <InputTable name="acquisitionAuthorizer">
               <Field name="acquisitionAuthorizer" />
               <Field name="acquisitionAuthorizerDate" />
             </InputTable>
 
+          </Col>
+        </Row>
+
+        <Row>
+          <Col>
+            <Field name="acquisitionSources">
+              <Field name="acquisitionSource" />
+            </Field>
+          </Col>
+          <Col>
             <Field name="owners">
               <Field name="owner" />
             </Field>
           </Col>
-
-        </Cols>
+        </Row>
 
         <Row>
           <Field name="restrictionsApply" subpath="ns2:acquisitions_dvp" />

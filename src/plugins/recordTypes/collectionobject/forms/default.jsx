@@ -65,30 +65,9 @@ const template = (configContext) => {
 
       </Panel>
 
-      <Panel name="desc" collapsible collapsed>
+      <Panel name="desc" collapsible>
 
-        <Row>
-          <Col>
-            <Field name="objectComponentGroupList">
-              <Field name="objectComponentGroup">
-                <Field name="objectComponentName" />
-                <Field name="objectComponentInformation" />
-              </Field>
-            </Field>
-          </Col>
-
-          <Col>
-            <Field name="technicalAttributeGroupList">
-              <Field name="technicalAttributeGroup">
-                <Field name="technicalAttribute" />
-                <Field name="technicalAttributeMeasurement" />
-                <Field name="technicalAttributeMeasurementUnit" />
-              </Field>
-            </Field>
-          </Col>
-        </Row>
-
-        <Panel name="content" collapsible collapsed>
+        <Panel name="content" collapsible>
           <Row>
             <Col>
               <Field name="contentActivities">
@@ -165,7 +144,7 @@ const template = (configContext) => {
         </Panel>
       </Panel>
 
-      <Panel name="prod" collapsible collapsed>
+      <Panel name="prod" collapsible>
         <Row>
           <Col>
             <Field name="objectProductionDateGroupList">
@@ -212,7 +191,7 @@ const template = (configContext) => {
         </Row>
       </Panel>
 
-      <Panel name="reference" collapsible collapsed>
+      <Panel name="reference" collapsible>
         <Field name="referenceGroupList">
           <Field name="referenceGroup">
             <Field name="reference" />
