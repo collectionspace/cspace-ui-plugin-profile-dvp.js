@@ -4,6 +4,7 @@ export default (configContext) => {
   const {
     TermPickerInput,
     DateInput,
+    CompoundInput,
   } = configContext.inputComponents;
 
   const {
@@ -22,33 +23,61 @@ export default (configContext) => {
             ns: 'http://collectionspace.org/services/intake/local/dvp',
           },
         },
-        interviewStatus: {
+        interviewStatusGroupList: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.intakes_dvp.interviewStatus.name',
-                defaultMessage: 'Interview Status',
-              },
-            }),
             view: {
-              type: TermPickerInput,
-              props: {
-                source: 'languages',
-              },
+              type: CompoundInput,
             },
           },
-        },
-        interviewStatusDate: {
-          [config]: {
-            dataType: DATA_TYPE_DATE,
-            messages: defineMessages({
-              name: {
-                id: 'field.intakes_dvp.interviewStatusDate.name',
-                defaultMessage: 'Interview Status Date',
+          interviewStatusGroup: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.intakes_dvp.interviewStatusGroup.name',
+                  defaultMessage: 'Interview status',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: CompoundInput,
+                props: {
+                  tabular: true,
+                },
               },
-            }),
-            view: {
-              type: DateInput,
+            },
+            interviewStatus: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.intakes_dvp.interviewStatus.name',
+                    defaultMessage: 'Status',
+                  },
+                }),
+                view: {
+                  type: TermPickerInput,
+                  props: {
+                    source: 'interviewstatus',
+                  },
+                },
+              },
+            },
+            interviewDate: {
+              [config]: {
+                dataType: DATA_TYPE_DATE,
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.intakes_dvp.interviewDate.fullName',
+                    defaultMessage: 'Interview date',
+                  },
+                  name: {
+                    id: 'field.intakes_dvp.interviewDate.name',
+                    defaultMessage: 'Date',
+                  },
+                }),
+                view: {
+                  type: DateInput,
+                },
+              },
             },
           },
         },

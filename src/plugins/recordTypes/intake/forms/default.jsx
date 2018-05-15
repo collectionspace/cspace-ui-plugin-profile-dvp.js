@@ -12,7 +12,6 @@ const template = (configContext) => {
 
   const {
     Field,
-    InputTable,
   } = configContext.recordComponents;
 
   return (
@@ -22,10 +21,12 @@ const template = (configContext) => {
           <Col>
             <Field name="entryNumber" />
 
-            <InputTable name="proposedTreatmentEst">
-              <Field name="interviewStatus" subpath="ns2:intakes_dvp" />
-              <Field name="interviewStatusDate" subpath="ns2:intakes_dvp" />
-            </InputTable>
+            <Field name="interviewStatusGroupList" subpath="ns2:intakes_dvp">
+              <Field name="interviewStatusGroup">
+                <Field name="interviewStatus" />
+                <Field name="interviewDate" />
+              </Field>
+            </Field>
 
           </Col>
 

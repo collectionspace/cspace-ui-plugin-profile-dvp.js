@@ -51,6 +51,9 @@ export default {
   'field.intakes_common.entryMethod.name': 'Form submission method',
   'field.intakes_common.entryNote.name': 'Vietnam experience',
 
+  // For CollectionObject/Cataloging
+  'field.collectionobjects_common.titleGroup.name': 'Object title',
+
   // For Panels
   'panel.person.connections': 'Community Connections',
 };
