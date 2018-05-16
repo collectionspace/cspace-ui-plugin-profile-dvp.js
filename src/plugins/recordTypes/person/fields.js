@@ -29,62 +29,52 @@ export default (configContext) => {
             ns: 'http://collectionspace.org/services/person/local/dvp',
           },
         },
-        dartmouthConnectionList: {
+        dartmouthGroupList: {
           [config]: {
             view: {
               type: CompoundInput,
             },
           },
-          dartmouthConnection: {
+          dartmouthGroup: {
             [config]: {
               messages: defineMessages({
                 name: {
-                  id: 'field.persons_dvp.dartmouthConnection.name',
-                  defaultMessage: 'Dartmouth Connection',
-                },
-              }),
-              repeating: true,
-              view: {
-                type: TermPickerInput,
-                props: {
-                  source: 'dartmouthconnections',
-                },
-              },
-            },
-          },
-        },
-        dartmouthConnectionOther: {
-          [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.persons_dvp.dartmouthConnectionOther.name',
-                defaultMessage: 'Other',
-              },
-            }),
-            view: {
-              type: TextInput,
-            },
-          },
-        },
-        collegeGroupList: {
-          [config]: {
-            view: {
-              type: CompoundInput,
-            },
-          },
-          collegeGroup: {
-            [config]: {
-              messages: defineMessages({
-                name: {
-                  id: 'field.persons_dvp.collegeGroup.name',
-                  defaultMessage: 'College Info',
+                  id: 'field.persons_dvp.dartmouthGroup.name',
+                  defaultMessage: 'Darmouth connections',
                 },
               }),
               repeating: true,
               view: {
                 type: CompoundInput,
-                props: {
-                  tabular: true,
+
+              },
+            },
+            dartmouthConnection: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.persons_dvp.dartmouthConnection.name',
+                    defaultMessage: 'Connection',
+                  },
+                }),
+                view: {
+                  type: TermPickerInput,
+                  props: {
+                    source: 'dartmouthconnections',
+                  },
+                },
+              },
+            },
+            dartmouthConnectionOther: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.persons_dvp.dartmouthConnectionOther.name',
+                    defaultMessage: 'Other',
+                  },
+                }),
+                view: {
+                  type: TextInput,
                 },
               },
             },
