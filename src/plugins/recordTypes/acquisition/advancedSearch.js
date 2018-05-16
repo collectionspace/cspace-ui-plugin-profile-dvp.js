@@ -37,6 +37,29 @@ export default (configContext) => {
         op: OP_EQ,
         path: 'ns2:acquisitions_common/owners/owner',
       },
+      //
+      // DVP Custom fields
+      //
+      {
+        op: OP_EQ,
+        path: 'ns2:acquisitions_dvp/archivesSpaceRecordId',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:acquisitions_dvp/restrictionsApply',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:acquisitions_dvp/publish',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:acquisitions_dvp/accessRestrictions',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:acquisitions_dvp/useRestrictions',
+      },
       ...extensions.core.advancedSearch,
     ],
   };

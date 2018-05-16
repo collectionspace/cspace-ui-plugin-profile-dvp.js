@@ -39,10 +39,14 @@ const template = (configContext) => {
 
         <Field name="entryNote" />
         <Row>
-          <Field name="entryDate" />
-          <Field name="entryMethods">
-            <Field name="entryMethod" />
-          </Field>
+          <Col>
+            <Field name="entryDate" />
+          </Col>
+          <Col>
+            <Field name="entryMethods">
+              <Field name="entryMethod" />
+            </Field>
+          </Col>
         </Row>
       </Panel>
     </Field>

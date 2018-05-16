@@ -48,6 +48,10 @@ export default (configContext) => {
             interviewStatus: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.intakes_dvp.interviewStatus.fullName',
+                    defaultMessage: 'Interview status',
+                  },
                   name: {
                     id: 'field.intakes_dvp.interviewStatus.name',
                     defaultMessage: 'Status',

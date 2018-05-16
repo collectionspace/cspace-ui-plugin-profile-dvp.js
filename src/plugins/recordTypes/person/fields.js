@@ -68,6 +68,10 @@ export default (configContext) => {
             dartmouthConnectionOther: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.persons_dvp.dartmouthConnectionOther.fullName',
+                    defaultMessage: 'Other connection',
+                  },
                   name: {
                     id: 'field.persons_dvp.dartmouthConnectionOther.name',
                     defaultMessage: 'Other',

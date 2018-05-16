@@ -48,11 +48,13 @@ export default {
   // For Intake Fields
   'field.intakes_common.currentOwner.name': 'Volunteer name',
   'field.intakes_common.depositor.name': 'Interview assignee',
+  'field.intakes_common.depositor.fullName': 'Interview assignee',
   'field.intakes_common.entryDate.name': 'Form submission date',
   'field.intakes_common.entryMethod.name': 'Form submission method',
   'field.intakes_common.entryNote.name': 'Vietnam experience',
 
   // For CollectionObject/Cataloging
+  'panel.collectionobject.desc': 'Object Description and Content Info',
   'field.collectionobjects_common.titleGroup.name': 'Object title',
 
   // For Panels

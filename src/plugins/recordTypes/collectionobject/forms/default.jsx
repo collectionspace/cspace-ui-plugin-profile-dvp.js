@@ -56,10 +56,20 @@ const template = (configContext) => {
                 <Field name="objectName" />
               </Field>
             </Field>
-            <Field name="recordStatus" />
           </Col>
           <Col>
             <Field name="collection" />
+          </Col>
+        </Row>
+
+        <Row>
+          <Col>
+            <Field name="recordStatus" />
+          </Col>
+          <Col>
+            <Field name="publishToList">
+              <Field name="publishTo" />
+            </Field>
           </Col>
         </Row>
 
@@ -67,81 +77,78 @@ const template = (configContext) => {
 
       <Panel name="desc" collapsible>
 
-        <Panel name="content" collapsible>
-          <Row>
-            <Col>
-              <Field name="contentActivities">
-                <Field name="contentActivity" />
-              </Field>
-
-              <Field name="contentConcepts">
-                <Field name="contentConcept" />
-              </Field>
-
-              <Field name="contentDateGroup" />
-
-              <Field name="contentEventNameGroupList">
-                <Field name="contentEventNameGroup">
-                  <Field name="contentEventName" />
-                  <Field name="contentEventNameType" />
-                </Field>
-              </Field>
-
-              <Field name="contentLanguages">
-                <Field name="contentLanguage" />
-              </Field>
-
-              <Field name="contentOrganizations">
-                <Field name="contentOrganization" />
-              </Field>
-
-              <Field name="contentOtherGroupList">
-                <Field name="contentOtherGroup">
-                  <Field name="contentOther" />
-                  <Field name="contentOtherType" />
-                </Field>
-              </Field>
-
-              <Field name="contentPeoples">
-                <Field name="contentPeople" />
-              </Field>
-
-            </Col>
-
-            <Col>
-              <Field name="contentDescription" />
-              <Field name="contentNote" />
-
-              <Field name="contentPersons">
-                <Field name="contentPerson" />
-              </Field>
-
-              <Field name="contentPlaces">
-                <Field name="contentPlace" />
-              </Field>
-
-            </Col>
-          </Row>
-
-
-          <Field name="measuredPartGroupList">
-            <Field name="measuredPartGroup">
-              <Panel>
-                <Field name="dimensionSummary" />
-                <Row>
-                  <Field name="dimensionSubGroupList">
-                    <Field name="dimensionSubGroup">
-                      <Field name="measurementUnit" />
-                      <Field name="dimension" />
-                      <Field name="value" />
-                    </Field>
-                  </Field>
-                </Row>
-              </Panel>
+        <Row>
+          <Col>
+            <Field name="contentActivities">
+              <Field name="contentActivity" />
             </Field>
-          </Field>
 
-        </Panel>
+            <Field name="contentConcepts">
+              <Field name="contentConcept" />
+            </Field>
+
+            <Field name="contentDateGroup" />
+
+            <Field name="contentEventNameGroupList">
+              <Field name="contentEventNameGroup">
+                <Field name="contentEventName" />
+                <Field name="contentEventNameType" />
+              </Field>
+            </Field>
+
+            <Field name="contentLanguages">
+              <Field name="contentLanguage" />
+            </Field>
+
+            <Field name="contentOrganizations">
+              <Field name="contentOrganization" />
+            </Field>
+
+            <Field name="contentOtherGroupList">
+              <Field name="contentOtherGroup">
+                <Field name="contentOther" />
+                <Field name="contentOtherType" />
+              </Field>
+            </Field>
+
+            <Field name="contentPeoples">
+              <Field name="contentPeople" />
+            </Field>
+
+          </Col>
+
+          <Col>
+            <Field name="contentDescription" />
+            <Field name="contentNote" />
+
+            <Field name="contentPersons">
+              <Field name="contentPerson" />
+            </Field>
+
+            <Field name="contentPlaces">
+              <Field name="contentPlace" />
+            </Field>
+
+          </Col>
+        </Row>
+
+
+        <Field name="measuredPartGroupList">
+          <Field name="measuredPartGroup">
+            <Panel>
+              <Field name="dimensionSummary" />
+              <Row>
+                <Field name="dimensionSubGroupList">
+                  <Field name="dimensionSubGroup">
+                    <Field name="measurementUnit" />
+                    <Field name="dimension" />
+                    <Field name="value" />
+                  </Field>
+                </Field>
+              </Row>
+            </Panel>
+          </Field>
+        </Field>
       </Panel>
 
       <Panel name="prod" collapsible>
