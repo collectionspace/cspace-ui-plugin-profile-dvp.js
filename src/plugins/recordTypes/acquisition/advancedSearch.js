@@ -32,7 +32,8 @@ export default (configContext) => {
       {
         op: OP_EQ,
         path: 'ns2:acquisitions_common/acquisitionSources/acquisitionSource',
-      },      {
+      },
+      {
         op: OP_EQ,
         path: 'ns2:acquisitions_common/owners/owner',
       },
