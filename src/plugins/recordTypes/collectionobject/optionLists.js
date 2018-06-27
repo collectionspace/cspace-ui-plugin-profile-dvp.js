@@ -33,11 +33,48 @@ export default {
       },
     }),
   },
+  numberTypes: {
+    values: [
+      'accession',
+      'lender',
+      'obsolete',
+      'previous',
+      'serial',
+      'unknown',
+    ],
+    messages: defineMessages({
+      accession: {
+        id: 'option.numberTypes.accession',
+        defaultMessage: 'accession',
+      },
+      lender: {
+        id: 'option.numberTypes.lender',
+        defaultMessage: 'lender',
+      },
+      obsolete: {
+        id: 'option.numberTypes.obsolete',
+        defaultMessage: 'obsolete',
+      },
+      previous: {
+        id: 'option.numberTypes.previous',
+        defaultMessage: 'previous',
+      },
+      serial: {
+        id: 'option.numberTypes.serial',
+        defaultMessage: 'serial',
+      },
+      unknown: {
+        id: 'option.numberTypes.unknown',
+        defaultMessage: 'unknown',
+      },
+    }),
+  },
   //
   // For Dimensions
   //
   measurementUnits: {
     values: [
+      'pages',
       'kilobytes',
       'megabytes',
       'gigabytes',
@@ -47,9 +84,13 @@ export default {
       'seconds',
     ],
     messages: defineMessages({
+      pages: {
+        id: 'option.measurementUnits.pages',
+        defaultMessage: 'pages',
+      },
       kilobytes: {
         id: 'option.measurementUnits.kilobytes',
-        defaultMessage: 'Kilobytes',
+        defaultMessage: 'kilobytes',
       },
       megabytes: {
         id: 'option.measurementUnits.megabytes',
@@ -79,10 +120,15 @@ export default {
   },
   dimensions: {
     values: [
+      'extent',
       'filesize',
       'runningtime',
     ],
     messages: defineMessages({
+      extent: {
+        id: 'option.dimensions.extent',
+        defaultMessage: 'Extent size',
+      },
       filesize: {
         id: 'option.dimensions.filesize',
         defaultMessage: 'File size',
