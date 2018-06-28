@@ -19,7 +19,7 @@ export default configContext => (data) => {
   }
 
   const acquisitionReferenceNumber = common.get('acquisitionReferenceNumber');
-  const owner = getDisplayName(deepGet(common, ['owners', 'owner', 0]));
+  const owner = getDisplayName(deepGet(common, ['acquisitionSources', 'acquisitionSource', 0]));
 
   return [acquisitionReferenceNumber, owner].filter(part => !!part).join(' – ');
 };

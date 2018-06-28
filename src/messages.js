@@ -41,8 +41,8 @@ export default {
 
   // For Acquisition Fields
   'field.acquisitions_common.acquisitionDateGroup.name': 'Interview date',
-  'field.acquisitions_common.acquisitionSource.name': 'Creator - Interviewer',
-  'field.acquisitions_common.owner.name': 'Creator - Interviewee',
+  'field.acquisitions_common.acquisitionSource.name': 'Creator - Interviewee',
+  'field.acquisitions_common.owner.name': 'Creator - Interviewer',
   'field.acquisitions_common.acquisitionAuthorizer.name': 'Processor',
 
   // For Intake Fields
