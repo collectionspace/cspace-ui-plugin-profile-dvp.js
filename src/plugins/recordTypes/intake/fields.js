@@ -17,6 +17,19 @@ export default (configContext) => {
 
   return {
     document: {
+      'ns2:intakes_common': {
+        entryMethods: {
+          entryMethod: {
+            [config]: {
+              view: {
+                props: {
+                  source: 'dvpentrymethod',
+                },
+              },
+            },
+          },
+        },
+      },
       'ns2:intakes_dvp': {
         [config]: {
           service: {

@@ -127,7 +127,7 @@ export default {
     messages: defineMessages({
       extent: {
         id: 'option.dimensions.extent',
-        defaultMessage: 'Extent size',
+        defaultMessage: 'Extent',
       },
       filesize: {
         id: 'option.dimensions.filesize',

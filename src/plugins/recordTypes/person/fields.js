@@ -104,7 +104,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   name: {
                     id: 'field.persons_dvp.yearsOfAttendanceDate.name',
-                    defaultMessage: 'Years of attendance',
+                    defaultMessage: 'Years active',
                   },
                 }),
                 searchView: {
