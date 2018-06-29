@@ -32,10 +32,6 @@ export default (configContext) => {
         op: OP_CONTAIN,
         path: 'ns2:collectionobjects_common/objectNameList/objectNameGroup/objectName',
       },
-      {
-        op: OP_CONTAIN,
-        path: 'ns2:collectionobjects_common/materialGroupList/materialGroup/material',
-      },
       ...extensions.core.advancedSearch,
     ],
   };
