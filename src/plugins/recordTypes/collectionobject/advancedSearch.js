@@ -18,10 +18,6 @@ export default (configContext) => {
       },
       {
         op: OP_EQ,
-        path: 'ns2:collectionobjects_common/responsibleDepartments/responsibleDepartment',
-      },
-      {
-        op: OP_EQ,
         path: 'ns2:collectionobjects_common/recordStatus',
       },
       {
