@@ -27,21 +27,31 @@ const template = (configContext) => {
                 <Field name="interviewDate" />
               </Field>
             </Field>
-
           </Col>
 
           <Col>
             <Field name="currentOwner" />
             <Field name="depositor" />
           </Col>
-
         </Cols>
 
+        <Field name="approvalGroupList">
+          <Field name="approvalGroup">
+            <Field name="approvalGroup" />
+            <Field name="approvalIndividual" />
+            <Field name="approvalStatus" />
+            <Field name="approvalDate" />
+            <Field name="approvalNote" />
+          </Field>
+        </Field>
+
         <Field name="entryNote" />
+
         <Row>
           <Col>
             <Field name="entryDate" />
           </Col>
+
           <Col>
             <Field name="entryMethods">
               <Field name="entryMethod" />
