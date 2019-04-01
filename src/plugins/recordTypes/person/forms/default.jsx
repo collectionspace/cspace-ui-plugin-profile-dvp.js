@@ -71,21 +71,22 @@ const template = (configContext) => {
       </Panel>
 
       <Panel name="connections" collapsible>
-
         <Field name="dartmouthGroupList" subpath="ns2:persons_dvp">
           <Field name="dartmouthGroup">
-            <Row>
-              <Field name="dartmouthConnection" />
-              <Field name="dartmouthConnectionOther" />
-            </Row>
-            <InputTable>
-              <Field name="collegeBranch" />
-              <Field name="yearsOfAttendanceDate" />
-              <Field name="yearOfGraduationDate" />
-            </InputTable>
+            <Panel>
+              <Row>
+                <Field name="dartmouthConnection" />
+                <Field name="dartmouthConnectionOther" />
+              </Row>
+
+              <InputTable>
+                <Field name="collegeBranch" />
+                <Field name="yearsOfAttendanceDate" />
+                <Field name="yearOfGraduationDate" />
+              </InputTable>
+            </Panel>
           </Field>
         </Field>
-
       </Panel>
 
       <Subrecord name="contact" />

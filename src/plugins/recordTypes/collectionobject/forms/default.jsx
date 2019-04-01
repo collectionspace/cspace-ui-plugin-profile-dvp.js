@@ -1,5 +1,3 @@
-import { defineMessages } from 'react-intl';
-
 const template = (configContext) => {
   const {
     React,
@@ -15,10 +13,6 @@ const template = (configContext) => {
     Field,
   } = configContext.recordComponents;
 
-  // const {
-  //   extensions,
-  // } = configContext.config;
-
   return (
     <Field name="document">
       <Panel name="id" collapsible>
@@ -32,8 +26,8 @@ const template = (configContext) => {
                 <Field name="numberType" />
               </Field>
             </Field>
-
           </Col>
+
           <Col>
             <Field name="briefDescriptions">
               <Field name="briefDescription" />
@@ -41,13 +35,11 @@ const template = (configContext) => {
           </Col>
         </Row>
 
-        <Row>
-          <Field name="titleGroupList">
-            <Field name="titleGroup">
-              <Field name="title" />
-            </Field>
+        <Field name="titleGroupList">
+          <Field name="titleGroup">
+            <Field name="title" />
           </Field>
-        </Row>
+        </Field>
 
         <Row>
           <Col>
@@ -56,27 +48,21 @@ const template = (configContext) => {
                 <Field name="objectName" />
               </Field>
             </Field>
-          </Col>
-          <Col>
-            <Field name="collection" />
-          </Col>
-        </Row>
 
-        <Row>
-          <Col>
             <Field name="recordStatus" />
           </Col>
+
           <Col>
+            <Field name="collection" />
+
             <Field name="publishToList">
               <Field name="publishTo" />
             </Field>
           </Col>
         </Row>
-
       </Panel>
 
       <Panel name="desc" collapsible>
-
         <Row>
           <Col>
             <Field name="contentActivities">
@@ -114,7 +100,6 @@ const template = (configContext) => {
             <Field name="contentPeoples">
               <Field name="contentPeople" />
             </Field>
-
           </Col>
 
           <Col>
@@ -128,7 +113,6 @@ const template = (configContext) => {
             <Field name="contentPlaces">
               <Field name="contentPlace" />
             </Field>
-
           </Col>
         </Row>
 
@@ -185,7 +169,6 @@ const template = (configContext) => {
                 <Field name="objectProductionPlaceRole" />
               </Field>
             </Field>
-
           </Col>
 
           <Col>
@@ -194,7 +177,6 @@ const template = (configContext) => {
               <Field name="objectProductionReason" />
             </Field>
           </Col>
-
         </Row>
       </Panel>
 
@@ -211,12 +193,5 @@ const template = (configContext) => {
 };
 
 export default configContext => ({
-  messages: defineMessages({
-    name: {
-      id: 'form.collectionobject.default.name',
-      defaultMessage: 'Standard Template',
-    },
-  }),
-  sortOrder: 0,
   template: template(configContext),
 });
