@@ -7,7 +7,7 @@ import messages from './messages';
 import plugins from './plugins';
 import styles from '../styles/cspace-ui-plugin-profile/dvp.css';
 
-module.exports = () => ({
+export default () => ({
   messages,
   className: styles.common,
   prettyUrls: true,
