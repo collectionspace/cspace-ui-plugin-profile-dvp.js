@@ -3,7 +3,7 @@ import fields from './fields';
 import forms from './forms';
 import optionLists from './optionLists';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   optionLists,
   recordTypes: {
     collectionobject: {

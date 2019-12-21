@@ -23,5 +23,5 @@ export default () => ({
       version: cspaceUIPluginProfileDartmouthVietnamProject.packageVersion,
     },
   },
-  plugins: plugins.map(plugin => plugin()),
+  plugins: plugins.map((plugin) => plugin()),
 });

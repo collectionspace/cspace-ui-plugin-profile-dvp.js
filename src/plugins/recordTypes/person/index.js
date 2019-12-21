@@ -4,7 +4,7 @@ import vocabularies from './vocabularies';
 import messages from './messages';
 import advancedSearch from './advancedSearch';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   recordTypes: {
     person: {
       messages,

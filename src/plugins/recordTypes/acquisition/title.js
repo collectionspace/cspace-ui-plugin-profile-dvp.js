@@ -1,4 +1,4 @@
-export default configContext => (data) => {
+export default (configContext) => (data) => {
   const {
     getPart,
     deepGet,
@@ -21,5 +21,5 @@ export default configContext => (data) => {
   const acquisitionReferenceNumber = common.get('acquisitionReferenceNumber');
   const owner = getDisplayName(deepGet(common, ['acquisitionSources', 'acquisitionSource', 0]));
 
-  return [acquisitionReferenceNumber, owner].filter(part => !!part).join(' – ');
+  return [acquisitionReferenceNumber, owner].filter((part) => !!part).join(' – ');
 };
